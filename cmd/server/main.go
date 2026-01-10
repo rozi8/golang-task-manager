@@ -13,6 +13,11 @@ func main() {
 
 	mux := http.NewServeMux()
 
+	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		w.WriteHeader(http.StatusOK)
+		w.Write([]byte("Task Manager API berjalan OK"))
+	})
+
 	taskHandler := handler.NewTaskHandler()
 	mux.HandleFunc("/tasks", taskHandler.HandleTasks)
 
