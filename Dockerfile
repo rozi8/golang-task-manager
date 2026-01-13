@@ -1,4 +1,4 @@
-# contoh dockerfile single stage 
+# contoh dockerfdocile single stage 
 
 # FROM golang:1.22
 # WORKDIR /home/rozi12/golang-task-manager/cmd/server/main.go
